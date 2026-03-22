@@ -1,0 +1,55 @@
+{
+  "id": "whisper-local-auto",
+  "name": "Whisper Local Auto",
+  "description": "Auto-transcribe voice messages using local Whisper model - works across all OpenClaw channels (Feishu, Telegram, WhatsApp, etc.)",
+  "version": "1.0.0",
+  "author": "Xia Ge",
+  "main": "index.ts",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "model": {
+        "type": "string",
+        "enum": ["tiny", "base", "small", "medium", "large"],
+        "default": "small",
+        "description": "Whisper model size to use for transcription"
+      },
+      "fallbackToApi": {
+        "type": "boolean",
+        "default": true,
+        "description": "Fallback to OpenAI API if local model fails"
+      },
+      "openaiApiKey": {
+        "type": "string",
+        "description": "OpenAI API Key (optional, for fallback only)"
+      },
+      "autoInstallDeps": {
+        "type": "boolean",
+        "default": true,
+        "description": "Automatically install ffmpeg and whisper on first use"
+      },
+      "keepAudioFiles": {
+        "type": "boolean",
+        "default": false,
+        "description": "Keep original audio files after transcription (for debugging)"
+      },
+      "transcribeInBackground": {
+        "type": "boolean",
+        "default": false,
+        "description": "Transcribe asynchronously without blocking message processing"
+      }
+    }
+  },
+  "uiHints": {
+    "model": { "label": "Whisper Model", "placeholder": "small" },
+    "fallbackToApi": { "label": "Allow API Fallback" },
+    "openaiApiKey": { "label": "OpenAI API Key (optional)", "sensitive": true },
+    "autoInstallDeps": { "label": "Auto-install Dependencies" }
+  },
+  "capabilities": {
+    "autoInstall": true,
+    "healthCheck": true,
+    "configurable": true
+  }
+}
