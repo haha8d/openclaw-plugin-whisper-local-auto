@@ -19,10 +19,10 @@
 
 ```bash
 # Install via OpenClaw CLI
-openclaw plugins install https://github.com/xiage/openclaw-plugin-whisper-local-auto
+openclaw plugins install https://github.com/haha8d/openclaw-plugin-whisper-local-auto
 
 # Or clone manually
-git clone https://github.com/xiage/openclaw-plugin-whisper-local-auto.git \
+git clone https://github.com/haha8d/openclaw-plugin-whisper-local-auto.git \
   ~/.openclaw/extensions/whisper-local-auto
 ```
 

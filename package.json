@@ -20,12 +20,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xiage/openclaw-plugin-whisper-local-auto.git"
+    "url": "https://github.com/haha8d/openclaw-plugin-whisper-local-auto.git"
   },
   "bugs": {
-    "url": "https://github.com/xiage/openclaw-plugin-whisper-local-auto/issues"
+    "url": "https://github.com/haha8d/openclaw-plugin-whisper-local-auto/issues"
   },
-  "homepage": "https://github.com/xiage/openclaw-plugin-whisper-local-auto#readme",
+  "homepage": "https://github.com/haha8d/openclaw-plugin-whisper-local-auto#readme",
   "peerDependencies": {
     "openclaw": ">=2026.1.0"
   },
